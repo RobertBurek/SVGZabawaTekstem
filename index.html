@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG - zabawa tekstem</title>
+    <link rel="stylesheet" href="tekstZnika.css">
+</head>
+<body>
+      <div>
+        <svg width="200" height="100">
+        <radialGradient id="gradientRadial" cx="50%" cy="50%" r="75%">
+          <stop stop-color="#FFF" offset="0">
+            <animate attributeName="stop-color" 
+                     values="#000;#FFF;"
+                     dur="3s" repeatCount="indefinite"/>
+          </stop>
+          <stop stop-color="#111" offset="100%"/>
+        </radialGradient>
+        <radialGradient id="gradientRadial2" cx="50%" cy="50%" r="75%">
+          <stop stop-color="#222" offset="100%">
+            <animate attributeName="stop-color" 
+                     values="#FFF;#222"
+                     dur="3s" repeatCount="indefinite"/>
+          </stop>
+          <stop stop-color="#222" offset="0%"/>
+        </radialGradient>
+        <text x="10%" y="30%" class="pokaz">
+          Robert
+        </text>
+        <text x="10%" y="70%" class="ukryj">
+          Burek
+        </text>
+      </svg>
+    </div>
+
+</body>
+</html>
